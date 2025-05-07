@@ -11,9 +11,9 @@ cd
 apt install python -y
 
 #Install Script Websocket-SSH Python
-wget -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/openssh.py && chmod +x /usr/local/bin/edu-proxy
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/dropbear-ws.py.txt
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/ws-stunnel.txt
+wget -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/openssh.py && chmod +x /usr/local/bin/edu-proxy
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/dropbear-ws.py.txt
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/ws-stunnel.txt
 
 #izin permision
 chmod +x /usr/local/bin/edu-proxy
@@ -22,13 +22,13 @@ chmod +x /usr/local/bin/ws-stunnel
 chmod +x /usr/local/bin/edu-proxyovpn
 
 #System Direcly dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/edu-proxy.service  https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/http.service && chmod +x /etc/systemd/system/edu-proxy.service
+wget -O /etc/systemd/system/edu-proxy.service  https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/http.service && chmod +x /etc/systemd/system/edu-proxy.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/V3SAKURAAIRIV3/BotDejavuV3/main/websocket/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/KopralProject/BotDejavuV3/main/websocket/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
 
 #restart service
 systemctl daemon-reload
